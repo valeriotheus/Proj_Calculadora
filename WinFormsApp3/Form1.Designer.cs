@@ -44,7 +44,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.GradientInactiveCaption;
             label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.HotTrack;
             label1.Location = new Point(311, 54);
             label1.Name = "label1";
             label1.Size = new Size(138, 20);
@@ -56,6 +58,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.Highlight;
             label2.Location = new Point(227, 119);
             label2.Name = "label2";
             label2.Size = new Size(115, 15);
@@ -66,6 +69,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.Highlight;
             label3.Location = new Point(227, 185);
             label3.Name = "label3";
             label3.Size = new Size(115, 15);
@@ -88,48 +92,57 @@
             // 
             // button1
             // 
+            button1.BackColor = SystemColors.GradientActiveCaption;
+            button1.ForeColor = SystemColors.HotTrack;
             button1.Location = new Point(256, 223);
             button1.Name = "button1";
             button1.Size = new Size(115, 67);
             button1.TabIndex = 5;
             button1.Text = "Somar";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = SystemColors.GradientActiveCaption;
+            button2.ForeColor = SystemColors.Highlight;
             button2.Location = new Point(377, 223);
             button2.Name = "button2";
             button2.Size = new Size(115, 67);
             button2.TabIndex = 6;
             button2.Text = "Subtrair";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackColor = SystemColors.GradientActiveCaption;
+            button3.ForeColor = SystemColors.Highlight;
             button3.Location = new Point(377, 296);
             button3.Name = "button3";
             button3.Size = new Size(115, 67);
             button3.TabIndex = 7;
             button3.Text = "Dividir";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button4
             // 
+            button4.BackColor = SystemColors.GradientActiveCaption;
+            button4.ForeColor = SystemColors.Highlight;
             button4.Location = new Point(256, 296);
             button4.Name = "button4";
             button4.Size = new Size(115, 67);
             button4.TabIndex = 8;
             button4.Text = "Multiplicar";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.HotTrack;
             label4.Location = new Point(256, 401);
             label4.Name = "label4";
             label4.Size = new Size(65, 15);
@@ -147,6 +160,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(755, 454);
             Controls.Add(textBox3);
             Controls.Add(label4);
@@ -161,6 +175,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
